@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">    
+  <meta name="viewport" content = " width=davice-width, initial-scale=1.0">
+  <tittle>cor de fundo</tittle> 
+<style>
+    body{
+
+    
+    font-family: arial, sans-serif:
+    text-align: center;
+    padding: 50px;
+    }
+
+    button{
+        padding: 10 px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: #007bff;
+        color: rgb(235, 234, 243);
+        border: none;
+        border-radius: 5px;
+    }
+
+
+</style>
+</head> 
+<body>
+    <h1>mudar cor de fundo</h1>
+    <p>clique no botao abaixo para mudar a cor de fundo</p>
+    <button onclick="mudarCOR()">mudar a cor</button>
+    <button onclick="mudarCOR1()">mudar a cor</button>
+    <script>
+        function mudarCOR(){
+        document.body.style.backgroundColor ="green";
+        }
+        function mudarCOR1(){
+        document.body.style.backgroundColor ="blue";
+        }
+    </script>
+</body>
+</html>
