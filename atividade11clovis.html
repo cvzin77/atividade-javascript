@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botão fujão</title>
+    </head>
+    <body> 
+        <div id="conteudo"  style = "">
+    <h2> vc quer namorar cmg?</h2>
+    <button onclick="sim()"> sim</button>
+    <button class="btn"onmouseover="desvia(this)"> nao</button>
+        </div>
+    </body>
+    <style> 
+   #conteudo{ 
+        background: #580a0a;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 10px;
+        text-align: center;
+    }
+    </style>
+    <script>
+    function()sim{
+        alert("voce aceito namorar comigo");
+ }
+ function desvia(t){
+    var btn = t;
+    btn.style.position = "absolute";
+    btn.style.buttom=geraposicao("0, 100");
+    btn.style.left=("0, 100");
+ console.log("opa desviei");
+ }
+
+ function geraosicao(min, max) {
+  return (Math.random() * (max - min) + min) + "%";
+}
+

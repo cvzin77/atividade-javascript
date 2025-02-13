@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradually Brighter Screen</title>
+    <style>
+        body {
+            background-color: black;
+            transition: background-color 0.5s;
+        }
+        button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="makeBrighter()">Click me to brighten the screen</button>
+
+    <script>
+        let brightness = 0;
+
+        function makeBrighter() {
+            if (brightness < 255) {
+                brightness += 10;
+                document.body.style.backgroundColor = `rgb(${brightness}, ${brightness}, ${brightness})`;
+            }
+        }
+    </script>
+</body>
+</html>
